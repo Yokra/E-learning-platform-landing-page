@@ -128,7 +128,7 @@ h1 {
 .section3 {
   display: grid;
   background-color: #8fa6cb;
-  grid-template-rows: 120px 150px 350px 130px;
+  grid-template-rows: 120px 150px 300px 120px;
 }
 
 .title {
@@ -193,7 +193,7 @@ h1 {
 
 .section4 {
   display: grid;
-  grid-template-rows: 200px 200px 1fr 210px;
+  grid-template-rows: 200px 200px 1fr 410px;
 }
 
 .title-aboutUs {
@@ -250,7 +250,7 @@ p:first-child {
   text-align: center;
   color: white;
   font-size: 18px;
-  width: 90%;
+  width: 88%;
   justify-self: center;
 }
 
@@ -265,8 +265,41 @@ p:first-child {
   background-color: #92d8ba;
   border-radius: 33px;
   border: none;
-  align-self: end;
+  align-self: center;
   justify-self: center;
 }
 
 /*#####################-->FOOTER<--###############################*/
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+div.footer-boxes {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-items: start;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+h3:first-child {
+  line-height: 2.5;
+}
+
+.img-footer {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+span {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  z-index: 100;
+  text-align: end;
+  align-self: end;
+  line-height: 3;
+}
