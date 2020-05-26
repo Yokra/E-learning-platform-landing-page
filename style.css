@@ -82,7 +82,7 @@ main {
   align-self: flex-start;
 }
 
-button {
+.btn1 {
   width: 271px;
   height: 58px;
   color: white;
@@ -95,3 +95,96 @@ button {
   align-self: flex-start;
   justify-self: center;
 }
+
+/*#####################-->SECTION 1<--###############################*/
+
+/* .section1 {
+  display: grid;
+  grid-template-rows: 1fr;
+} */
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.red {
+  position: absolute;
+  top: 120%;
+  width: 11%;
+}
+
+.blue {
+  position: absolute;
+  top: 116%;
+  right: 0;
+  width: 9%;
+}
+
+/*#####################-->SECTION 2<--###############################*/
+/*#####################-->SECTION 3<--###############################*/
+
+.section3 {
+  display: grid;
+  background-color: #8fa6cb;
+  grid-template-rows: 120px 100px 380px 150px;
+}
+
+.title {
+  color: white;
+  grid-row: 1/2;
+  text-align: center;
+  align-self: end;
+}
+
+.p {
+  font-size: 23px;
+  color: white;
+  grid-row: 2/3;
+  text-align: center;
+  align-self: center;
+}
+
+.box {
+  grid-row: 3/4;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+.js,
+.db,
+.php {
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.js {
+  justify-self: end;
+}
+
+.db {
+  justify-self: center;
+}
+
+.php {
+  justify-self: start;
+}
+
+.white-btn {
+  border-color: white;
+  border: solid 2px;
+  color: white;
+  background-color: #8fa6cb;
+  width: 271px;
+  height: 58px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  border-radius: 33px;
+  justify-self: center;
+  grid-row: 4/5;
+  align-self: start;
+}
+
+/*#####################-->SECTION 4<--###############################*/
