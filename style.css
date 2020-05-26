@@ -6,9 +6,10 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
+  color: #173d7a;
 }
 
-/* ##########################HEADER########################## */
+/* ##########################-->HEADER<--########################## */
 
 header {
   background-color: white;
@@ -33,7 +34,7 @@ header li a {
 
 header img {
   height: 48%;
-  width: 8%;
+  width: 8.5%;
   padding-left: 10px;
   z-index: 100;
 }
@@ -47,4 +48,50 @@ ul {
 a:hover,
 a:active {
   color: #8fa6cb;
+}
+
+/*##########################-->MAIN<--#############################*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.text {
+  grid-column: 1/2;
+  width: 80%;
+}
+
+.intro {
+  grid-row: 1/5;
+  grid-column: 2/3;
+}
+
+.main_p1,
+.main_p2 {
+  font-size: 20px;
+  font-weight: 400;
+  align-self: center;
+  justify-self: center;
+  width: 67%;
+  line-height: 1.5;
+}
+
+.main_p2 {
+  align-self: flex-start;
+}
+
+button {
+  width: 271px;
+  height: 58px;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  background-color: #92d8ba;
+  border-radius: 33px;
+  border: none;
+  align-self: flex-start;
+  justify-self: center;
 }
