@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Welcome to YOMA</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
       </nav>
     </header>
     <main>
-      <img class="text" src="img/text.png" />
+      <img class="img-text" src="img/text.png" />
       <img class="intro" src="img/intro.png" />
       <p class="main_p1">
         Are you a beginner web developer who needs some guidelines? Or a student
@@ -42,7 +42,52 @@
       <img class="blue" src="img/blue.png" alt="" />
     </section>
 
-    <section>swiper</section>
+    <section class="section2">
+      <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+      <div class="slides-container">
+        <div class="currentSlide">
+          <h2>Study</h2>
+          <img class="study" src="img/study.png" />
+          <div class="text">
+            Our structured courses allow participants to follow and focus
+            effortlessly. Gaining knowledge and skills was never easier.
+            <br /><br />
+            Our expert teachers help you with the studying process and prepare
+            you well for your studies and career.
+          </div>
+        </div>
+
+        <div class="currentSlide">
+          <h2>Challenge yourself</h2>
+          <img class="challenge" src="img/challenge.png" />
+          <div class="text">
+            The best way to learn is by challenging yourself everyday. Keep
+            track on your daily process, plan and form habits.
+            <br /><br />
+            With YOMA is easy to create a daily routine with your studying and
+            make progress with the modules.
+          </div>
+        </div>
+
+        <div class="currentSlide">
+          <h2>Grow</h2>
+          <img class="grow" src="img/grow.png" />
+          <div class="text">
+            Building your knowledge creates confidence that brings result,
+            develops skills and achieves success. YOMA is here to help you grow.
+          </div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><img src="img/prev.png" /></a>
+      <a class="next" onclick="plusSlides(1)"><img src="img/next.png" /></a>
+
+      <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
 
     <section class="section3">
       <h1 class="title">Browse our most popular courses</h1>
@@ -121,5 +166,6 @@
       >
       <img class="img-footer" src="img/footer.png" alt="" />
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

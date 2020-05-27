@@ -58,7 +58,7 @@ main {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.text {
+.img-text {
   grid-column: 1/2;
   width: 80%;
 }
@@ -98,10 +98,11 @@ main {
 
 /*#####################-->SECTION 1<--###############################*/
 
-/* .section1 {
+.section1 {
   display: grid;
-  grid-template-rows: 1fr;
-} */
+  grid-template-rows: 200px;
+  align-items: center;
+}
 
 h1 {
   font-size: 38px;
@@ -111,18 +112,98 @@ h1 {
 
 .red {
   position: absolute;
-  top: 120%;
+  top: 105%;
   width: 11%;
 }
 
 .blue {
   position: absolute;
-  top: 116%;
+  top: 110%;
   right: 0;
   width: 9%;
 }
 
 /*#####################-->SECTION 2<--###############################*/
+
+.section2 {
+  display: grid;
+  grid-template-rows: 1fr auto 100px;
+}
+
+.slides-container {
+  height: 566px;
+  width: 711px;
+  box-shadow: 2px 2px 22px 5px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  border-radius: 6px;
+  justify-self: center;
+}
+
+.currentSlide {
+  display: grid;
+  grid-template-rows: 110px 260px 120px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  align-self: center;
+}
+
+.study,
+.challenge,
+.grow {
+  width: 35%;
+  justify-self: center;
+  align-self: center;
+}
+
+.text {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16.5px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 183%;
+  width: 1.5%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 27%;
+}
+
+.prev {
+  left: 27%;
+}
+
+/* bullets/indicators */
+.dot {
+  position: relative;
+  bottom: 210%;
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #173d7a;
+  display: inline-block;
+}
+
+.active {
+  background-color: #173d7a;
+}
+
 /*#####################-->SECTION 3<--###############################*/
 
 .section3 {
