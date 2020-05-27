@@ -30,3 +30,13 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "grid";
   dots[slideIndex - 1].className += " active";
 }
+
+/* function myFunction() {
+  var x = document.getElementById("menuLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ */

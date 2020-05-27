@@ -7,11 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
+
     <title>Welcome to YOMA</title>
   </head>
   <body>
-    <header>
+    <header class="desktop-nav">
       <img src="img/logo.png" alt="logo" />
       <nav>
         <ul>
@@ -21,6 +23,22 @@
         </ul>
       </nav>
     </header>
+    <!-- burger menu -->
+    <div class="burger-container">
+      <nav class="burger-menu">
+        <ul id="menuLinks">
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Courses</li></a>
+          <a href="#"><li>Login</li></a>
+        </ul>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="img/prev.png" alt="" />
+        </a>
+      </nav>
+    </div>
+
     <main>
       <img class="img-text" src="img/text.png" />
       <img class="intro" src="img/intro.png" />

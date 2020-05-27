@@ -50,6 +50,10 @@ a:active {
   color: #8fa6cb;
 }
 
+.burger-container {
+  display: none;
+}
+
 /*##########################-->MAIN<--#############################*/
 
 main {
@@ -88,7 +92,7 @@ main {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 21px;
   background-color: #92d8ba;
   border-radius: 33px;
   border: none;
@@ -263,7 +267,7 @@ h2 {
   height: 58px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 21px;
   border-radius: 33px;
   justify-self: center;
   grid-row: 4/5;
@@ -342,7 +346,7 @@ p:first-child {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 21px;
   background-color: #92d8ba;
   border-radius: 33px;
   border: none;
@@ -359,6 +363,8 @@ footer {
 }
 
 div.footer-boxes {
+  /* width: 80%;
+  justify-self: end; */
   grid-column: 2/3;
   grid-row: 2/3;
   align-items: start;
@@ -383,4 +389,51 @@ span {
   text-align: end;
   align-self: end;
   line-height: 3;
+}
+
+/*########################-->MOBILE<--*############################/
+
+/* For small devices (landscape phones): */
+@media (max-width: 599px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Style the navigation menu */
+  .burger-menu {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .burger-menu #menuLinks {
+    display: block;
+  }
+
+  /* Style navigation menu links */
+  .burger-menu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .burger-menu a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .icon {
+    width: 30%;
+  }
+}
+
+/*########################-->TABLET<--*############################/
+/* For medium devices (tablets, 768px and up): */
+@media (min-width: 768px) {
 }
