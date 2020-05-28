@@ -50,9 +50,9 @@ a:active {
   color: #8fa6cb;
 }
 
-.burger-container {
+/* .burger-menu {
   display: none;
-}
+} */
 
 /*##########################-->MAIN<--#############################*/
 
@@ -395,7 +395,13 @@ span {
 
 /* For small devices (landscape phones): */
 @media (max-width: 599px) {
-  .desktop-nav {
+  * {
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+  }
+
+  header.desktop-nav {
     display: none;
   }
 
@@ -403,33 +409,53 @@ span {
   .burger-menu {
     overflow: hidden;
     position: relative;
+    background-color: white;
+  }
+
+  #menuLinks {
+    margin-top: -13%;
+  }
+
+  #menuLinks a {
+    position: relative;
+    top: 25%;
+    padding: 40px;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   .burger-menu #menuLinks {
-    display: block;
+    display: none;
+    text-align: center;
+    height: 700px;
+    background-color: #8fa6cb;
   }
 
   /* Style navigation menu links */
-  .burger-menu a {
+  a {
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
     display: block;
+    height: 40px;
+  }
+
+  img.logo-mobile {
+    width: 19%;
+    margin-top: 2%;
+    margin-left: 1.5%;
   }
 
   /* Style the hamburger menu */
   .burger-menu a.icon {
-    background: black;
     display: block;
     position: absolute;
-    right: 0;
+    right: 3%;
     top: 0;
   }
 
-  .icon {
-    width: 30%;
+  img.menu {
+    width: 40px;
+    height: 40px;
   }
 }
 
