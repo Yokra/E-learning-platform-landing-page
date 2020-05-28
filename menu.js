@@ -6,7 +6,7 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-document.getElementsByClassName("icon").onclick = function () {
+/* document.getElementsByClassName("icon").onclick = function () {
   document.getElementsByClassName("logo-mobile").style.visibility = "hidden";
   document.getElementsByClassName("menu").style.color = "white";
-};
+}; */
