@@ -6,7 +6,12 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-/* document.getElementsByClassName("icon").onclick = function () {
-  document.getElementsByClassName("logo-mobile").style.visibility = "hidden";
-  document.getElementsByClassName("menu").style.color = "white";
-}; */
+
+function xFunction() {
+  var y = document.getElementById("menuLinks");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
