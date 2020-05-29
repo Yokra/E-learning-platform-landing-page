@@ -1,4 +1,4 @@
-function myFunction() {
+/* function myFunction() {
   var x = document.getElementById("menuLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -15,3 +15,4 @@ function xFunction() {
     y.style.display = "none";
   }
 }
+ */
